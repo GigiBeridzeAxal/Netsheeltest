@@ -39,7 +39,8 @@ const Footer = () => {
           <img src="/img/footer-logo.png" alt="footer-logo" />
         </div>
         <div className="copyright-side-div">
-          <p>Copyright © 2024 Netseel all rights reserved.</p>
+          <p>182-184 High Street North East Ham
+          London</p>
         </div>
         <div className="footer-social-media-div">
           <button>
@@ -66,9 +67,6 @@ const Footer = () => {
             <a href="/about">Apply for Job</a>
           </li>
           <li>
-            <a href="/portfolio">Portfolio</a>
-          </li>
-          <li>
             <a href="contact">Contact Us</a>
           </li>
         </ul>
@@ -78,32 +76,29 @@ const Footer = () => {
         <h4>Services</h4>
         <ul className="footer-ul">
           <li>
-            <a href="/services">Website Design and Development</a>
+            <a href="/services">Graphic Design</a>
           </li>
           <li>
-            <a href="/services">Mobile Application Development</a>
+            <a href="/services">UI/UX Designing</a>
           </li>
           <li>
-            <a href="/services">Graphic Designing</a>
+            <a href="/services">Web Development</a>
           </li>
           <li>
-            <a href="/services">Software Development</a>
+            <a href="/services">Shopify Development</a>
           </li>
           <li>
             <a href="/services">Digital Marketing</a>
           </li>
           <li>
-            <a href="/services">Video Editing</a>
-          </li>
-          <li>
-            <a href="/services">IT Offshore Outsourcing</a>
+            <a href="/services">AI Integration</a>
           </li>
         </ul>
       </div>
       <div className="footer-4-div">
         <h4>Keep in touch</h4>
-        <p className="address-footer">{"(917) 283-3915"}</p>
-        <p className="address-footer">infor@informanist.com</p>
+        <p className="address-footer">{"(919) 191-99191"}</p>
+        <p className="address-footer">info@netsheel.com</p>
         <div className="footer-subscribe-div">
           <h4>Subscribe to Newsletter</h4>
           <div className="footer-subscribe-main-div">
@@ -116,8 +111,7 @@ const Footer = () => {
       </div>
     </div>
     <div className="footer-copyright-main-div">
-      <p>182-184 High Street North East Ham
-      London </p>
+      <p> Copyright © 2024 Netseel all rights reserved. </p>
     </div>
   </footer>
     </>

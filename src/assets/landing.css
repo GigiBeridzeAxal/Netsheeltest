@@ -1244,14 +1244,18 @@ footer {
 
 .services-tab-ul {
   display: flex;
-  max-width: 596px;
+  max-width: 696px;
   align-items: center;
   gap: 11px;
   list-style: none;
   flex-wrap: wrap;
   justify-content: center;
 }
-
+.contact{
+  display: flex !important;
+  align-items: center;
+  justify-content: space-between !important;
+}
 .services-tab-ul button {
   height: 35px;
   text-decoration: none;
@@ -1375,13 +1379,15 @@ button.active-tab-services {
   display: flex;
   flex-direction: column;
   max-width: 670px !important;
-  margin: auto;
+  width: 450px;
+
 }
 
 .input-div {
   display: flex;
-  flex-direction: column;
-  margin: 20px 0;
+
+  margin: 5px 0;
+
 }
 
 .input-div label {
@@ -1392,23 +1398,51 @@ button.active-tab-services {
   margin-bottom: 5px;
 }
 
+.input-div{
+  border: 1px solid #a2a2a2;
+  display: flex;
+  border-radius: 30px;
+
+  align-items: center;
+  padding: 5px;
+  padding-left: 10px;
+}
+.contactframe{
+  width: 65%;
+  max-width: 1000px;
+  min-width: 700px;
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(246, 246, 246);
+  border-radius: 25px;
+  box-shadow: 2px 2px 15px 2px rgb(216, 216, 216);
+  padding: 20px;
+}
+
 .input-div input,
 .sp-input-div select {
   height: 60px;
   padding: 20px;
-  border: 1px solid #a2a2a2;
+  border: none;
+
   background-color: transparent;
   outline: none;
   width: 100%;
+  border-radius: 100px;
+
+}
+.sp-input-div select {
+  border: 1px solid #a2a2a2;
 }
 
 .input-div textarea {
   padding: 20px;
-  border: 1px solid #a2a2a2;
+  border: none;
   background-color: transparent;
   outline: none;
-  height: 230px;
+  height: 130px;
   resize: none;
+  border-radius: 25px;
 }
 
 .sp-input-div-title {
@@ -1498,6 +1532,19 @@ button.active-tab-services {
 .sliders-main-div .slide-1.active-slide {
   transform: translate(-50%, -50%) scale(1);
   opacity: 1;
+}
+
+@media (max-width:700px) {
+  .contactinfo{
+    display: none !important;
+  }
+  .contactframe{
+    align-items: center !important;
+    justify-content: center !important;
+    min-width: 0px !important;
+    width: 100%;
+  }
+  
 }
 
 @media screen and (max-width: 800px) {

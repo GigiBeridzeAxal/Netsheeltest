@@ -82,7 +82,6 @@ const About = () => {
               create extraordinary digital experiences, including seamless
               Shopify store setups tailored to your unique business needs.
             </p>
-            <button className="about-read-more">Read More</button>
           </div>
           <div className="about-image">
             <img src="/img/about.png" alt="image" />

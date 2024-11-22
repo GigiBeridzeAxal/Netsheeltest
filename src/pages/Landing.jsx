@@ -158,12 +158,13 @@ const Landing = () => {
               <img src="/img/ul.png" alt="graphics design" />
             </div>
             <h3 className="service-title">UI/UX Designing</h3>
-            <button
-              onClick={() => redirect("/services/2")}
+            <a
+            href="/about"
+
               className="read-more-b"
             >
               Read More
-            </button>
+            </a>
           </div>
           <div className="service-div">
             <div className="service-logo">
@@ -245,7 +246,7 @@ const Landing = () => {
               create extraordinary digital experiences, including seamless
               Shopify store setups tailored to your unique business needs.
             </p>
-            <button className="about-read-more">Read More</button>
+            <button onClick={() => window.location = '/about'} className="about-read-more">Read More</button>
           </div>
           <div className="about-image">
             <img src="/img/about.png" alt="image" />
@@ -378,17 +379,7 @@ const Landing = () => {
           ))}
         </div>
       </section>
-      <section id="newsletter">
-        <h2 className="newsletter-title-sec">Subscribe To Our Newsletter</h2>
-        <div className="newsletter-div-main container">
-        <form onSubmit={(e) => subscribe(e)}>
-          <input required   onChange={(e) => setemail(e.target.value)} type="email" placeholder="Enter your email address" />
-          <button>Submit</button>
-         
-
-          </form>
-        </div>
-      </section>
+     
       <Footer />
     </>
   );

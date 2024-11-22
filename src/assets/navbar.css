@@ -10,10 +10,14 @@
   justify-content: space-between;
   align-items: center;
   padding: 20px;
+  max-width: 1000px !important;
 }
 
 .menu-btn {
   display: none;
+}
+.contactcontainer{
+  margin: 0 !important;
 }
 
 .nav-links-header {
@@ -39,7 +43,39 @@
 .nav-links-header.active .nav-hr {
   width: 100% !important;
 }
+.contactinfo{
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-width: 50%;
+}
+.socialconnect button{
+  width: 50px;
+  height: 50px;
+  border: 0;
+  border-radius: 50%;
+  background-color: white;
 
+}
+.socialconnect div{
+  display: flex;
+  align-items: center;
+  gap: 35px;
+
+}
+.connectwithme{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  font-size: 24px;
+}
+
+.desc{
+  font-size: 30px;
+  color: black;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
 .active-nav {
   color: var(--primary-clr);
 }
@@ -53,6 +89,11 @@
   justify-content: space-between;
   align-items: center;
   list-style: none;
+}
+.contactsection{
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .contact-button-header {

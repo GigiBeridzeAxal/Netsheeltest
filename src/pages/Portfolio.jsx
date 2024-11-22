@@ -357,19 +357,7 @@ const Portfolio = () => {
             </div>
           </div>
         </div>
-        <button
-          style={{
-            display:
-              serviceTab !== SERVICES_TABS.ALL &&
-              serviceTab !== SERVICES_TABS.WEB &&
-              serviceTab !== SERVICES_TABS.DEV
-                ? "none"
-                : "block",
-          }}
-          className="load-more-services"
-        >
-          View More
-        </button>
+      
         <p
           className="sp-p-services"
           style={{

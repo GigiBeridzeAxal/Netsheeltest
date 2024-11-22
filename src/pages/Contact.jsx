@@ -124,11 +124,43 @@ const [notify , setnotify] = useState(false)
             Solutions Designed For Your Digital Evolution
           </span>
         </div>
-        <section id="contact ">
-          <form  className="container form-container" onSubmit={handleSubmit}>
+        <section id="contact " className="contactsection">
+
+          <div className="contactframe">
+
+
+          <div className="contactinfo">
+            <label ><img width={150} src="/img/logo.png" alt="" /></label>
+            <div className="desc">Let's Create, Collaborate, and Innovate Together!
+            </div>
+            <div className="connectwithme">
+              <div className="connectittle">Connect with us on social media</div>
+              <div className="socialmedia socialconnect">        <div className="footer-social-media-div">
+          <button>
+            <i className="fa-brands fa-facebook"></i>
+          </button>
+          <button>
+            <i className="fa-brands fa-linkedin-in"></i>
+          </button>
+          <button>
+            <i className="fa-brands fa-twitter"></i>
+          </button>
+          <button>
+            <i className="fa-brands fa-instagram"></i>
+          </button>
+        </div></div>
+            </div>
+          </div>
+
+
+
+          <form  className="container contactcontainer form-container" onSubmit={handleSubmit}>
             <div className="input-div">
-              <label htmlFor="name">Name</label>
+<img src="/img/User.png" width={30} alt="" />
+  
+
               <input required
+              placeholder="Full Name"
                 type="text"
                 name="name"
                 id="name"
@@ -137,8 +169,9 @@ const [notify , setnotify] = useState(false)
               />
             </div>
             <div className="input-div">
-              <label htmlFor="name">Phone</label>
+            <img src="/img/Phone.png" width={30} alt="" />
               <input required
+                placeholder="Mobile Number"
                 type="number"
                 name="phone"
                 id="phone"
@@ -147,8 +180,9 @@ const [notify , setnotify] = useState(false)
               />
             </div>
             <div className="input-div">
-              <label htmlFor="name">Email</label>
+            <img src="/img/Email.png" width={30} alt="" />
               <input required
+                placeholder="Email Adress"
                 type="email"
                 name="email"
                 id="email"
@@ -157,7 +191,6 @@ const [notify , setnotify] = useState(false)
               />
             </div>
             <div className="sp-input-div">
-              <div className="sp-input-div-title">I need Service Of</div>
               <select required name="type" id="type">
                 <option value="ui">Graphic Design</option>
                 <option value="ui">Shopify</option>
@@ -165,11 +198,13 @@ const [notify , setnotify] = useState(false)
                 <option value="ui">UI/UX</option>
                 <option value="ui">Web Design</option>
                 <option value="ui">Web Development</option>
+                <option value="ui">Ai Integration</option>
               </select>
             </div>
             <div className="input-div">
-              <label htmlFor="name">Describe your idea</label>
+
               <textarea required
+              placeholder="Enter Your Message Here"
                 name="ideas"
                 id="ideas"
                 value={user.ideas}
@@ -181,7 +216,9 @@ const [notify , setnotify] = useState(false)
               <button type="submit">Send Message</button>
             </div>
           </form>
+          </div>
         </section>
+        
       </header>
       
 
@@ -208,8 +245,11 @@ const [notify , setnotify] = useState(false)
           </form>
 
         </div>
+        
       </section>
+      
       <Footer />
+      
     </>
   );
 };

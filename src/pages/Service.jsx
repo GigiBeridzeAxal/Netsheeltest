@@ -162,7 +162,7 @@ const Service = () => {
                   }
                   onClick={() => setServiceTab(SERVICES_TABS.SHOPIFY)}
                 >
-                  Shpopify
+                  Shopify
                 </button>
               </li>
             </ul>
@@ -224,7 +224,7 @@ const Service = () => {
             <div className="service-logo">
               <img src="/img/web.png" alt="graphics design" />
             </div>
-            <h3 className="service-title">Wev Development</h3>
+            <h3 className="service-title">Web Development</h3>
             <button className="read-more-b" onClick={() => redirect("3")}>
               Read More
             </button>
