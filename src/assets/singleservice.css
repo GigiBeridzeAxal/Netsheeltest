@@ -1,0 +1,112 @@
+:root {
+  --primary-clr: #4f76fa;
+  --primary-hvr: #2f5ffd;
+}
+
+.single-service-error-title {
+  font-family: "SF Pro display";
+
+  font-size: 2em;
+  text-align: center;
+  padding: 50px;
+  padding-top: 0;
+  color: red;
+}
+
+.single-service-title h2 {
+  font-size: 2em;
+  font-family: "SF Pro display";
+  padding-top: 30px;
+}
+
+.single-service-description {
+  font-family: "SF Pro display";
+  color: #494b51;
+  font-size: 18px;
+  line-height: 30px;
+  padding: 10px 0;
+}
+
+.single-service-card-container {
+  display: flex;
+  gap: 50px;
+  align-items: center;
+  margin: 50px auto;
+  border-radius: 30px;
+}
+
+.single-service-card-benefits {
+  width: 50%;
+}
+
+.single-service-card-img {
+  width: 50%;
+}
+
+.single-service-card-img img {
+  width: 100%;
+}
+
+.card-benefit {
+  border-bottom: 1px solid #c3c3c3;
+  width: 100% !important;
+  padding: 25px 0;
+  display: flex;
+  gap: 20px;
+  justify-content: flex-start;
+  align-items: center;
+  font-family: "SF Pro display";
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.card-benefit i {
+  width: 35px;
+  height: 35px;
+  background-color: var(--primary-clr);
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#benefits-section {
+  background-color: #e6ebf9;
+  margin: 10px auto;
+  padding: 40px 60px;
+  border-radius: 10px;
+}
+
+.benefits-main-title {
+  text-align: center;
+  font-size: 2.1em;
+  font-family: "SF Pro display";
+  padding: 20px 0;
+  color: var(--primary-clr);
+  margin-bottom: 20px;
+}
+
+#benefits-section ul li {
+  font-family: "SF Pro display";
+  color: #494b51;
+  font-weight: 100 !important;
+  font-size: 18px;
+  margin: 20px 0;
+  line-height: 35px;
+}
+
+#benefits-section ul li strong {
+  color: black;
+}
+
+@media screen and (max-width: 800px) {
+  .single-service-card-container {
+    flex-direction: column;
+  }
+
+  .single-service-card-img,
+  .single-service-card-benefits {
+    width: 100%;
+  }
+}

@@ -1,0 +1,1526 @@
+@import url("https://fonts.cdnfonts.com/css/sf-pro-display");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+
+:root {
+  --primary-clr: #4f76fa;
+  --primary-hvr: #2f5ffd;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+.landing-header {
+  background: url("/img/bg-banner.png") rgba(255, 255, 255, 0.604);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.my-special-header {
+  min-height: 100vh !important;
+}
+
+.banner-container {
+  display: flex;
+  gap: 60px;
+}
+
+.banner-img {
+  width: 441px !important;
+}
+
+.banner-img img {
+  width: 90% !important;
+}
+
+.banner-content {
+  width: 55%;
+}
+
+.banner-container h1 {
+  font-family: "SF Pro display";
+  font-size: 4.5em;
+  font-weight: 500;
+  letter-spacing: 2px;
+  line-height: 1.2em;
+}
+
+.banner-container p {
+  font-family: "SF Pro display";
+  width: 470px;
+  color: #777;
+  font-size: 1.2em;
+  line-height: 1.5em;
+  margin: 10px 0;
+  margin-bottom: 30px;
+}
+
+.banner-buttons-container {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.try-btn {
+  background: var(--primary-clr);
+  color: white;
+  border: none;
+  font-size: 1.2em;
+  padding: 20px 12px;
+  font-weight: 600;
+  letter-spacing: 1.2px;
+  border-radius: 15px;
+  width: 60%;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.services-header {
+  background: linear-gradient(
+    135deg,
+    #bbcbff,
+    transparent,
+    transparent,
+    transparent
+  );
+}
+
+.try-btn:hover {
+  background-color: var(--primary-hvr);
+}
+
+.play-video-div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-family: "SF Pro display";
+  color: var(--primary-clr);
+}
+
+.video-icon {
+  width: 50px;
+  height: 50px;
+  border: 1px solid var(--primary-clr);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.center-point {
+  width: 10px;
+  height: 10px;
+  background: var(--primary-clr);
+  border-radius: 50%;
+}
+
+.statistics-div {
+  display: flex;
+  margin: 25px 0;
+  gap: 40px;
+  justify-content: center;
+  align-items: center;
+}
+
+.statistics p {
+  width: 100%;
+  margin: 10px 0;
+  color: #666;
+}
+
+.contact-btn-header {
+  display: block;
+  text-decoration: none;
+  font-family: "SF Pro display";
+  margin: 0 auto;
+  margin-bottom: 15px;
+  font-size: 1.2em;
+  color: white;
+  background-color: var(--primary-clr);
+  border: none;
+  border-radius: 9px;
+  width: 300px;
+  height: 55px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.contact-btn-header:hover {
+  background: var(--primary-hvr);
+}
+
+.statistics {
+  font-family: "SF Pro display";
+  position: relative;
+}
+
+.statistics h2 {
+  font-size: 2.5em;
+  position: relative;
+  z-index: 2;
+}
+
+.statistics-hr {
+  position: absolute;
+  width: 100px;
+  height: 8px;
+  border-radius: 4px;
+  border: none;
+  top: 2.1em;
+}
+
+.sp-hr {
+  top: 2.7em;
+}
+
+.my-banner-div {
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 50px;
+  min-height: calc(100vh - 103px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center !important;
+  align-items: center;
+}
+
+.my-banner-div h1 {
+  text-align: center;
+  font-family: "SF Pro display";
+  font-size: 3em;
+}
+
+.my-banner-div img {
+  display: block;
+  margin: auto;
+}
+
+.my-banner-div .p {
+  font-family: "SF Pro display";
+  color: #666;
+  max-width: 650px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 22.5px;
+  text-align: center;
+  margin: 50px auto;
+}
+
+/* services  */
+#services {
+  background-position: right bottom;
+  background-repeat: no-repeat;
+  background-image: linear-gradient(
+    135deg,
+    transparent,
+    transparent,
+    transparent,
+    #b2c4ff
+  );
+  padding: 50px 0;
+}
+
+.sec-subtitle {
+  font-family: "SF Pro Display";
+  font-weight: 500;
+  font-size: 15.21px;
+  line-height: 18.16px;
+  text-align: center;
+  letter-spacing: 2px;
+  color: var(--primary-clr);
+}
+
+.sec-title {
+  text-align: center;
+  font-family: "SF Pro display";
+  font-weight: 600;
+  font-size: 36.51px;
+  line-height: 43.57px;
+  max-width: 637.12px;
+  margin: auto;
+  padding: 0 40px;
+  margin-bottom: 30px;
+}
+
+.sp-span {
+  color: var(--primary-clr);
+}
+
+.services-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  max-width: 1000px !important;
+}
+
+.service-div {
+  width: 275.55px !important;
+  height: 195.11px;
+  border-radius: 10px;
+  font-family: "SF Pro Display";
+  background-color: white;
+  box-shadow: 8px 0 16px 0 rgba(0, 0, 0, 8%), 0 0 4px rgba(0, 0, 0, 4%);
+  position: relative;
+  color: var(--primary-clr);
+  font-size: 18.26px;
+  line-height: 21.79px;
+  text-align: center;
+  padding: 30px 0 20px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  border: 2px solid white;
+}
+
+.service-title {
+  font-size: 18.26px !important;
+  line-height: 21.79px;
+  text-align: center;
+}
+
+button.read-more-b {
+  height: 32px !important;
+  padding: 0px 18.26px 0px;
+  font-size: 14.69px !important;
+  line-height: 21.3px;
+  color: #3182ce;
+  cursor: pointer;
+  border: 1px solid #3182ce;
+  background-color: white;
+  transition: 0.3s;
+  border-radius: 5px !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.read-more-b:hover {
+  background-color: #e2e7eb;
+}
+
+.service-div:hover {
+  border: 2px solid var(--primary-clr);
+}
+
+/* about  */
+.about-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  padding: 0 !important;
+}
+
+.about-image {
+  width: 55%;
+  padding: 120px 50px;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 580px;
+}
+
+.about-image img:first-child {
+  width: 110% !important;
+  position: relative;
+  z-index: 2;
+}
+
+.about-image img.top-img {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.about-content {
+  width: 80%;
+  padding: 20px 30px;
+}
+
+.about-title img {
+  margin-left: 10px;
+  margin-bottom: -15px;
+}
+
+.about-title {
+  font-size: 1.7em;
+  line-height: 41.08px;
+  font-family: "SF Pro Display";
+}
+
+.about-subtitle {
+  font-family: "SF Pro DIsplay";
+  font-size: 18.26px;
+  line-height: 22.82px;
+  color: #4e545f;
+  display: block;
+  margin: 18px 0;
+  letter-spacing: 1.2px;
+}
+
+.about-subtitle-2 {
+  font-family: "SF Pro Display";
+  font-weight: 600;
+  font-size: 24.34px;
+  line-height: 29.67px;
+  margin-bottom: 20px;
+}
+
+.about-p-1 {
+  font-family: "SF Pro Display";
+  font-size: 15.37px;
+  line-height: 25.34px;
+  color: #494b51;
+  text-align: justify;
+}
+
+.about-p-2 {
+  font-family: "SF Pro Display";
+  font-size: 15.37px;
+  line-height: 25.34px;
+  color: #494b51;
+  margin-bottom: 20px;
+  text-align: justify;
+}
+
+.about-read-more {
+  width: 167px;
+  height: 48px;
+  padding: 0 18px 0 18px;
+  border: 1px solid #3182ce;
+  color: #4f76fa;
+  font-size: 13.69px;
+  line-height: 21.3px;
+  background-color: white;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+.about-read-more:hover {
+  background: #e3e9f0;
+}
+
+.btm-img {
+  position: absolute;
+  bottom: -50px;
+  right: -50px;
+  z-index: 3;
+}
+
+#quality {
+  background: linear-gradient(
+    -120deg,
+    #d3ddff,
+    transparent,
+    transparent,
+    transparent
+  );
+  padding: 50px 0;
+}
+
+.quality-title-main h2 {
+  font-family: "SF Pro display";
+  font-size: 42px;
+  text-align: center;
+  line-height: 54px;
+}
+
+.quality-title-main span {
+  font-size: 18px;
+  line-height: 26.4px;
+  display: block;
+  margin: auto;
+  text-align: center;
+  color: #4e545f;
+  font-family: "SF Pro display";
+  margin-top: 20px;
+  margin-bottom: 35px;
+}
+
+.quality-main-div {
+  display: flex;
+  max-width: 1170px;
+  background-color: #ecf0ff;
+  margin: auto;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.quality-icon {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s;
+}
+
+.quality-card img {
+  width: 40px;
+  height: 40px;
+}
+
+.quality-main-div .quality-card {
+  width: 290px;
+  height: 310px;
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "SF Pro display";
+  transition: 0.3s linear;
+}
+
+.quality-level {
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 42px;
+  color: #4f76fa;
+}
+
+.quality-title {
+  color: #4e545f;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.quality-card:hover {
+  background-color: white;
+  box-shadow: 0 32px 71px -14px #928d88;
+}
+
+.quality-card:hover .quality-icon {
+  background-color: #ecf0ff;
+}
+
+/* approach  */
+
+#approach {
+  background: linear-gradient(110deg, #e6f5ff, transparent, transparent);
+  padding: 50px 0;
+}
+
+.approach-container {
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: 50px;
+  flex-wrap: wrap;
+}
+
+.approach-div {
+  width: 188px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.approach-icon {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #4f76fa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.approach-step {
+  margin-top: 10px;
+  font-size: 16px;
+  line-height: 23.04px;
+  color: #7684bd;
+  font-family: "SF Pro Display";
+}
+
+.approach-title {
+  font-family: "Poppins";
+  font-size: 16px;
+  line-height: 22px;
+  margin: 20px 0;
+  font-weight: 400;
+}
+
+.approach-desc {
+  font-family: "SF Pro display";
+  font-size: 15px;
+  line-height: 22px;
+  font-weight: 400;
+  color: #494b51;
+}
+
+/* testimonials */
+
+.test-l-btn,
+.test-r-btn {
+  position: absolute;
+  top: 55%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  background: none;
+  border: none;
+}
+
+.test-l-btn {
+  left: 27%;
+  /*transform: translateX(-50%); */
+}
+
+.test-r-btn {
+  right: 27%;
+}
+
+.navigation-test-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+.navigation-test-div button {
+  width: 16px;
+  height: 16px;
+  background-color: white;
+  border: 1px solid var(--primary-clr);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.navigation-test-div button.test-active-btn {
+  background: linear-gradient(#4f76fa, #2f4964);
+}
+
+@media screen and (max-width: 1200px) {
+  .test-l-btn {
+    left: 25%;
+    /*transform: translateX(-50%); */
+  }
+
+  .test-r-btn {
+    right: 25%;
+  }
+}
+
+@media screen and (max-width: 1070px) {
+  .test-l-btn {
+    left: 20%;
+    /*transform: translateX(-50%); */
+  }
+
+  .test-r-btn {
+    right: 20%;
+  }
+}
+
+#testimonials {
+  padding: 50px 0;
+}
+
+.testimonials-title h1 {
+  font-size: 36.51px;
+  line-height: 43.57px;
+  font-family: "SF Pro display";
+  font-weight: 600;
+  text-align: center;
+}
+
+.testimonials-title p {
+  font-size: 17px;
+  line-height: 26.4px;
+  color: #494b51;
+  text-align: center;
+  max-width: 565px;
+  font-family: "SF Pro display";
+  margin: 10px auto;
+}
+
+.testimonials-container {
+  position: relative;
+  min-height: 550px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.testimonials-main-div {
+  max-width: 532.87px;
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  min-height: 175px;
+  opacity: 0;
+
+  transition: 0.3s;
+}
+
+.active-test {
+  transform: translate(-50%, -50%) scale(1);
+  opacity: 1;
+}
+
+.testimonials-pic img {
+  width: 64.01px;
+  height: 64.01px;
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: calc(-64.01px / 2);
+}
+
+.test-desc {
+  font-family: "SF Pro display";
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 26.4px;
+  text-align: center;
+  padding: 50px;
+  padding-bottom: 20px;
+}
+
+.testimonials-container .img-sp {
+  position: absolute;
+  filter: drop-shadow(0 0 3.04px rgba(0, 0, 0, 0.4));
+  top: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+}
+
+.testimonials-section-logo {
+  margin-top: 40px;
+  margin-bottom: -100px;
+  text-align: center;
+}
+
+.sp-h2-test {
+  font-family: "SF Pro display";
+  font-weight: 400;
+  font-size: 31.13px;
+  line-height: 38.13px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.test-about-name {
+  font-family: "SF Pro display";
+  font-weight: 500;
+  color: var(--primary-clr);
+  line-height: 20px;
+  font-size: 16px;
+  text-align: center;
+}
+
+.test-about-profession {
+  font-size: 15.5px;
+  line-height: 18px;
+  color: #59636a;
+  font-family: "SF Pro display";
+  text-align: center;
+  padding: 15px;
+}
+
+.testimonials-rdm-img {
+  position: absolute;
+  z-index: -1;
+  top: 20px;
+  width: 90%;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 70%;
+}
+
+.testimonials-rdm-img div {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.div-test-1 {
+  max-width: 500px;
+}
+
+.div-test-2 {
+  max-width: 800px;
+}
+
+.div-test-3 {
+  max-width: 950px;
+}
+
+.div-test-4 {
+  max-width: 1000px;
+}
+
+/* faqs  */
+#faqs {
+  padding: 50px 0;
+}
+
+.faq-title {
+  width: 100%;
+  padding: 8px 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 5px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.12);
+  margin-bottom: 10px;
+  gap: 10px;
+}
+
+.faq-title button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.12);
+  border: none;
+  background-color: white;
+  color: var(--primary-clr);
+  cursor: pointer;
+  transition: 0.3s;
+  transform: rotate(0deg);
+}
+
+.faq-title button.show-faq-btn {
+  transform: rotate(90deg);
+}
+
+.faq-title h4 {
+  font-family: "SF Pro display";
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.faq-body {
+  font-family: "SF Pro display";
+  font-size: 15px;
+  line-height: 26.4px;
+  max-width: 530px;
+  padding: 20px 15px;
+  display: none;
+}
+
+.faq-title-section {
+  padding: 0 10px;
+}
+
+.faq-body.show-faq-body {
+  display: block;
+}
+
+/* newsletter  */
+
+#newsletter {
+  background-color: #f5f7fa;
+  padding: 50px 0;
+  text-align: center;
+}
+
+#newsletter h2 {
+  text-align: center;
+  font-family: "SF Pro Display";
+  font-weight: 300 !important;
+  font-size: 60px;
+  line-height: 57.78px;
+}
+
+.newsletter-div-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 50px auto !important;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.newsletter-div-main input {
+  width: 339.27px;
+  height: 61.42px;
+  border-radius: 8px;
+  border: none;
+  background: none;
+  background-color: white;
+  padding: 0 20px;
+  outline: none;
+  font-size: 17px;
+  line-height: 35.1px;
+  font-family: "SF Pro display";
+  border: 1px solid transparent;
+}
+
+.newsletter-div-main button {
+  height: 61.42px;
+  width: 148px;
+  border-radius: 5px;
+  border: none;
+  background-color: var(--primary-clr);
+  color: white;
+  font-family: "SF Pro display";
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.newsletter-div-main input:focus {
+  border: 1px solid var(--primary-clr);
+}
+
+.newsletter-div-main button:hover {
+  background-color: var(--primary-hvr);
+}
+
+/* footer  */
+footer {
+  background-color: #0a0605;
+  padding-top: 20px;
+}
+
+.footer-container {
+  display: flex;
+  gap: 100px;
+  flex-wrap: wrap;
+}
+
+.footer-1-div {
+  width: 200px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.footer-1-div p {
+  font-family: "SF Pro display";
+  font-size: 15px;
+  line-height: 25px;
+  margin-bottom: 30px;
+}
+
+.footer-1-div button {
+  width: 30px;
+  height: 30px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  border: none;
+  margin-right: 10px;
+  color: var(--primary-clr);
+  background-color: white;
+  transition: 0.3s;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.footer-1-div button:hover {
+  background-color: var(--primary-clr);
+  color: white;
+}
+
+.footer-2-div,
+.footer-3-div {
+  color: white;
+  font-family: "SF Pro display";
+}
+
+.footer-2-div h4,
+.footer-3-div h4,
+.footer-4-div h4 {
+  margin-bottom: 20px;
+  font-family: "SF Pro display";
+  font-size: 16px;
+}
+
+.footer-2-div ul,
+.footer-3-div ul {
+  list-style: none;
+}
+
+.footer-2-div ul li a,
+.footer-3-div ul li a {
+  color: white;
+  font-family: sans-serif;
+  text-decoration: none;
+  color: #d5d5d5;
+  display: block;
+  margin: 20px 0 !important;
+  font-size: 14px;
+}
+
+.footer-2-div ul li a:hover,
+.footer-3-div ul li a:hover {
+  text-decoration: underline;
+}
+
+.footer-4-div {
+  color: white;
+}
+
+.footer-4-div p {
+  margin: 20px 0;
+  font-family: "SF Pro display";
+  font-size: 14px;
+  color: #d5d5d5;
+}
+
+.footer-subscribe-main-div input {
+  width: 189px;
+  height: 38.63px;
+  border: 1px solid var(--primary-clr);
+  padding: 0 15px;
+  outline: none;
+  font-size: 12px;
+  border-bottom-left-radius: 8px;
+  border-top-left-radius: 8px;
+}
+
+.footer-subscribe-main-div button {
+  width: 81px;
+  height: 38.3px;
+  background-color: var(--primary-clr);
+  text-transform: uppercase;
+  color: white;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  border: none;
+  font-size: 12px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.footer-subscribe-main-div button:hover {
+  background-color: var(--primary-hvr);
+}
+
+.footer-copyright-main-div {
+  border-top: 1px #999 solid;
+  color: white;
+  font-family: "SF Pro display";
+  text-align: center;
+  color: #d5d5d5;
+  padding: 20px;
+  text-transform: capitalize;
+}
+
+@media screen and (max-width: 800px) {
+  .portfolio-desc-title {
+    font-size: 1.2em !important;
+  }
+
+  .statistics h2 {
+    font-size: 2em;
+  }
+
+  .my-contact-title h1 {
+    font-size: 2.2em !important;
+  }
+
+  .statistics-hr {
+    top: 1.5em;
+  }
+
+  .testimonials-title p {
+    font-size: 1.05em !important;
+    padding: 0 20px;
+  }
+
+  .testimonials-title h1 {
+    font-size: 2em !important;
+  }
+
+  .sp-hr {
+    top: 2.1em;
+  }
+
+  .quality-title-main h2 {
+    font-size: 2em !important;
+  }
+
+  .services-banner-title h1 {
+    font-size: 2.2em !important;
+  }
+
+  .services-banner-title .banner-subtitle-services {
+    font-size: 1.1em !important;
+  }
+
+  .my-banner-div {
+    min-height: calc(100vh - 74.77px);
+  }
+
+  .testimonials-rdm-img {
+    position: absolute;
+    z-index: -1;
+    top: -50px;
+    height: 100%;
+  }
+
+  .testimonials-section-logo {
+    margin-top: 40px;
+    margin-bottom: -30px;
+    text-align: center;
+  }
+
+  .services-filter-btn {
+    margin: auto;
+  }
+
+  #newsletter h2 {
+    font-size: 2em;
+  }
+  .about-container {
+    flex-direction: column;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 40px;
+  }
+
+  .about-content {
+    width: 100%;
+  }
+
+  .about-title img {
+    width: 5.5em;
+  }
+
+  .about-title {
+    font-size: 1.5em;
+  }
+
+  .about-content p {
+    font-size: 1em;
+    line-height: 1.8em;
+  }
+
+  .about-image {
+    width: 100%;
+    height: 580px;
+  }
+
+  .about-image img:first-child {
+    width: 100% !important;
+  }
+
+  .banner-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .banner-container h1 {
+    font-size: 3em;
+  }
+
+  .banner-content {
+    width: 100%;
+    text-align: center;
+  }
+
+  .statistics {
+    text-align: left !important;
+  }
+
+  .statistics p {
+    margin: 10px 0 !important;
+    padding: 0 !important;
+  }
+
+  .my-banner-div h1 {
+    font-size: 2em;
+  }
+
+  .banner-content p {
+    margin: 20px auto !important;
+    padding: 20px;
+    width: 100% !important;
+  }
+
+  .banner-buttons-container {
+    justify-content: space-between;
+  }
+}
+
+/* services page  */
+.sp-p-services {
+  font-family: "SF Pro display";
+  font-size: 1.2em;
+  color: #494b51;
+  text-align: center;
+}
+
+.services-banner-title h1 {
+  padding: 30px 0;
+  text-align: center;
+  font-family: "SF Pro display";
+  font-size: 42px;
+  line-height: 52px;
+  font-weight: 700;
+  max-width: 446px;
+  margin: auto;
+}
+
+.sp-span-t {
+  font-family: "Playfair Display", serif;
+  font-weight: 700;
+  font-style: italic;
+  color: var(--primary-clr);
+}
+
+.services-banner-title .banner-subtitle-services {
+  font-family: "SF Pro display";
+  max-width: 477px;
+  font-weight: 400 !important;
+  font-size: 24px;
+  line-height: 32px;
+  display: block;
+  color: #494b51;
+  margin: auto;
+  text-align: center;
+}
+
+.services-banner-tab {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: auto;
+  margin-top: 40px;
+  max-width: 880px;
+  gap: 20px;
+}
+
+.services-filter-btn {
+  width: 97px;
+  height: 34.82px;
+  border-radius: 5px;
+  padding: 8px 17px;
+  display: flex;
+  align-items: center;
+  border: none;
+  background-color: var(--primary-clr);
+  color: white;
+  gap: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.services-filter-btn:hover {
+  background-color: var(--primary-hvr);
+}
+
+.services-tab-ul {
+  display: flex;
+  max-width: 596px;
+  align-items: center;
+  gap: 11px;
+  list-style: none;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.services-tab-ul button {
+  height: 35px;
+  text-decoration: none;
+  border: 1px solid var(--primary-clr);
+  font-family: "SF Pro display";
+  font-size: 14px;
+  line-height: 15.29px;
+  color: var(--primary-clr);
+  font-weight: 400;
+  padding: 5px 10px;
+  border-radius: 16.82px;
+  transition: 0.3s;
+  background: none;
+  cursor: pointer;
+}
+
+.services-tab-ul button:hover {
+  background: #e6edff;
+  color: var(--primary-clr);
+}
+
+button.active-tab-services {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(var(--primary-clr), #2f4694) !important;
+  color: white !important;
+  transition: 0.3s;
+}
+
+.load-more-services {
+  width: 162px;
+  height: 44.9px;
+  display: block;
+  background-color: var(--primary-clr);
+  color: white;
+  margin: auto;
+  margin-top: 10px;
+  font-family: "SF Pro display";
+  font-size: 1j8px;
+  line-height: 21.48px;
+  font-weight: 600;
+  border: none;
+  padding: 8px 17px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.load-more-services:hover {
+  background-color: var(--primary-hvr);
+}
+
+/* portfolio page  */
+.portfolio-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 35px;
+  flex-wrap: wrap;
+}
+
+.portfolio-container .portfolio-main-div {
+  width: 370px;
+}
+
+.portfolio-desc-div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  padding: 10px 0;
+}
+
+.portfolio-desc-title {
+  font-family: "SF Pro display";
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 32px;
+  color: #0f0d1c;
+}
+
+.portfolio-desc-subtitle {
+  font-size: 16px;
+  line-height: 26px;
+  font-family: "SF Pro display";
+  font-weight: 400;
+  color: #636371;
+  display: block;
+  margin: 5px 0;
+}
+
+.portfolio-desc-icon button {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  transform: rotate(-45deg);
+  color: white;
+  background-color: var(--primary-clr);
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.portfolio-desc-icon button:hover {
+  background-color: var(--primary-hvr);
+}
+
+/* contact page  */
+.my-contact-title h1 {
+  font-size: 52px;
+  font-weight: 500;
+  font-family: "SF Pro display";
+  text-align: center;
+  color: #0e0e0f;
+  line-height: 66px;
+  padding: 40px 0;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  max-width: 670px !important;
+  margin: auto;
+}
+
+.input-div {
+  display: flex;
+  flex-direction: column;
+  margin: 20px 0;
+}
+
+.input-div label {
+  font-family: "SF Pro display";
+  color: #51486a;
+  font-size: 18px;
+  line-height: 30px;
+  margin-bottom: 5px;
+}
+
+.input-div input,
+.sp-input-div select {
+  height: 60px;
+  padding: 20px;
+  border: 1px solid #a2a2a2;
+  background-color: transparent;
+  outline: none;
+  width: 100%;
+}
+
+.input-div textarea {
+  padding: 20px;
+  border: 1px solid #a2a2a2;
+  background-color: transparent;
+  outline: none;
+  height: 230px;
+  resize: none;
+}
+
+.sp-input-div-title {
+  font-size: 30px;
+  font-family: "SF Pro display";
+  line-height: 40px;
+  color: #080415;
+  margin-bottom: 5px;
+  font-weight: 500;
+}
+
+.sp-input-container {
+  display: flex;
+  align-items: center;
+  font-family: "SF Pro display";
+  font-size: 18px;
+  line-height: 30px;
+  color: #51586a;
+  margin: 20px 0;
+}
+
+.sp-input-container input {
+  margin: 0 10px;
+}
+
+.sp-input-container input:first-child {
+  margin-left: 0px;
+}
+
+.btn-div-form {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.btn-div-form button {
+  width: 196px;
+  height: 54px;
+  border-radius: 5px;
+  background-color: var(--primary-clr);
+  color: white;
+  padding: 8px 17px;
+  border: none;
+  cursor: pointer;
+  margin-top: 10px;
+  font-size: 18px;
+  font-family: "SF Pro display";
+  font-weight: 500;
+  line-height: 21.48px;
+  transition: 0.3s;
+}
+
+.btn-div-form button:hover {
+  background-color: var(--primary-hvr);
+}
+
+/* slider  */
+.slider-conainer {
+  position: relative;
+}
+
+.sliders-main-div {
+  position: relative;
+  height: 700px;
+  max-height: 100vh
+}
+
+.sliders-main-div .slide-1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  opacity: 0;
+  transition: 0.3s;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  height: 100%;
+  font-family: "SF Pro display";
+  font-size: 16px;
+  letter-spacing: 1.2px;
+}
+
+.sliders-main-div .slide-1.active-slide {
+  transform: translate(-50%, -50%) scale(1);
+  opacity: 1;
+}
+
+@media screen and (max-width: 800px) {
+  .sliders-main-div .slide-1 {
+    height: auto !important;
+    width: 85% !important;
+  }
+  .sliders-main-div {
+    position: relative;
+    height: 550px;
+  }
+}
+
+.slide-1 img {
+  width: 100%;
+}
+
+.special-test-l {
+  left: 10px !important;
+  transform: scale(1.2);
+}
+
+.special-test-r {
+  right: 10px !important;
+  transform: scale(1.2);
+}
