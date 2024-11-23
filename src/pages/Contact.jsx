@@ -123,6 +123,7 @@ const [notify , setnotify] = useState(false)
           <span className="banner-subtitle-services">
             Solutions Designed For Your Digital Evolution
           </span>
+          <br />
         </div>
         <section id="contact " className="contactsection">
 

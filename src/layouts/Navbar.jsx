@@ -48,7 +48,7 @@ const Navbar = () => {
           </ul>
         </div>
         <div className={`contact-button-div ${navshow ? "" : "hidden-nav"}`}>
-          <a href="/contact" className="contact-button-header">Contact</a>
+          <NavLink to={"/contact"}  className="contact-button-header">Contact</NavLink>
         </div>
       </div>
     </div>

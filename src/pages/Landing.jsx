@@ -246,7 +246,7 @@ const Landing = () => {
               create extraordinary digital experiences, including seamless
               Shopify store setups tailored to your unique business needs.
             </p>
-            <button onClick={() => window.location = '/about'} className="about-read-more">Read More</button>
+            <button onClick={() => redirect('/contact')} className="about-read-more">Read More</button>
           </div>
           <div className="about-image">
             <img src="/img/about.png" alt="image" />
