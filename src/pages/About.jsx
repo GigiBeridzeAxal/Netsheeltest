@@ -103,13 +103,7 @@ const About = () => {
           ))}
         </div>
       </section>
-      <section id="newsletter">
-        <h2 className="newsletter-title-sec">Subscribe To Our Newsletter</h2>
-        <div className="newsletter-div-main container">
-          <input type="text" placeholder="Enter your email address" />
-          <button>Submit</button>
-        </div>
-      </section>
+     
       <Footer />
     </>
   );

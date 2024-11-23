@@ -375,17 +375,7 @@ const SignleService = () => {
           ))}
         </div>
       </section>
-      <section id="newsletter">
-        <h2 className="newsletter-title-sec">Subscribe To Our Newsletter</h2>
-        <div className="newsletter-div-main container">
-        <form onSubmit={(e) => subscribe(e)}>
-          <input required   onChange={(e) => setemail(e.target.value)} type="email" placeholder="Enter your email address" />
-          <button>Submit</button>
-         
-
-          </form>
-        </div>
-      </section>
+     
       <Footer />
     </>
   );
