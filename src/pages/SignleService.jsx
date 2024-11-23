@@ -44,6 +44,7 @@ const servicesData = [
   {
     id: 1,
     title: "Graphic Design",
+    services:["Logo Design" , "Brand Identify Design" , "Social Media Graphics" , "Ilustrations"],
     desc: "Learn the fundamentals of graphic design, covering topics such as typography,  and Adobe Creative   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis cum saepe, aliquid ullam quis odio quisquam quidem quo illo odit?",
     benefits: [
       "Lorem Ipsum color",
@@ -57,6 +58,7 @@ const servicesData = [
   {
     id: 2,
     title: "UI/UX Designing",
+    services:["Wire Framing and Prototyping" , "User Research And Testing" , "Mobile App Design" , "Web Interface Design"],
     desc: "This course covers the principles of user interface (UI) and user experience (UX) design,  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis cum saepe, aliquid ullam quis odio quisquam quidem quo illo odit?",
     benefits: [
       "Lorem Ipsum color",
@@ -70,6 +72,7 @@ const servicesData = [
   {
     id: 3,
     title: "Web Development",
+    services:["Front-End Development" , "Back-End Development" , "Full-Stack Development" , "E-comercee Website "],
     desc: "Learn HTML, CSS, and JavaScript to build dynamic and responsive websites, Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis cum saepe, aliquid ullam quis odio quisquam quidem quo illo odit?",
     benefits: [
       "Lorem Ipsum color",
@@ -83,6 +86,7 @@ const servicesData = [
   {
     id: 4,
     title: "Shopify",
+    services:["Shopify Store Setup" , "Custom Theme Development" , "Shopify App Integration" , "Store Optimization"],
     desc: "Learn the fundamentals of graphic design, covering topics such as typography,  and Adobe Creative . Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis cum saepe, aliquid ullam quis odio quisquam quidem quo illo odit?",
     benefits: [
       "Lorem Ipsum color",
@@ -96,6 +100,7 @@ const servicesData = [
   {
     id: 5,
     title: "Digital Marketing",
+    services:["Search Engine Optimization" , "Social Media Marketing" , "Email Marketing" , "Content Marketing"],
     desc: "This course covers the principles of user interface (UI) and user experience (UX) design,  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis cum saepe, aliquid ullam quis odio quisquam quidem quo illo odit?",
     benefits: [
       "Lorem Ipsum color",
@@ -109,6 +114,7 @@ const servicesData = [
   {
     id: 6,
     title: "AI Integration",
+    services:["Chatbot Development" , "Practice Analytics" , "Natural Language Processing" , "Ai Driven Automation"],
     desc: "Learn HTML, CSS, and JavaScript to build dynamic and responsive websites,  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis cum saepe, aliquid ullam quis odio quisquam quidem quo illo odit?",
     benefits: [
       "Lorem Ipsum color",
@@ -194,6 +200,15 @@ const SignleService = () => {
                 {service.desc} Lorem ipsum, dolor sit amet consectetur
                 adipisicing elit. Officia, nostrum?
               </p>
+              <div className="servicesframe">
+              {service.services.map((e,i) => (
+                <div className={`servicenameframe servicecolor${i} ` } >{e}</div>
+                ))}  
+              </div>             
+
+            
+              <div className="serviceoffers">
+              </div>
               <div className="single-service-card-container">
                 <div className="single-service-card-img">
                   <img src={service.img} />
